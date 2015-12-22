@@ -4,15 +4,16 @@
     <head>
         <meta charset="utf-8">
         <title>symphoni</title>
-        <link rel="shortcut icon" href="{{url_for('static', filename='icons/favicon.ico')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='libs/font-awesome-4.3.0/css/font-awesome.min.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='libs/bootstrap-3.3.6-dist/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='libs/custom/css/custom.css')}}">
+        {% load staticfiles %}
+        <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'libs/font-awesome-4.3.0/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="static/libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'libs/custom/css/custom.css' %}">
     </head>
 
     <body>
         <!--Bootstrap-->
-        <script src="{{url_for('static', filename='libs/bootstrap-3.3.6-dist/js/bootstrap.min.js')}}"></script>
+        <script src="{% static 'libs/bootstrap-3.3.6-dist/js/bootstrap.min.js' %}"></script>
 
         <!--Nav-bar-->
         <header>
@@ -34,12 +35,11 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
+                            <li><a href="#/about">About</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-    <p>This is home!</p>
     </body>
 </html>
