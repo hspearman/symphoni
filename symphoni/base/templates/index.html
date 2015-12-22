@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>symphoni</title>
+        {% load staticfiles %}
+        <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'libs/font-awesome-4.3.0/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'libs/custom/css/custom.css' %}">
+    </head>
+
+    <body>
+        <!--Bootstrap-->
+        <script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
+
+        <!--Nav-bar-->
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!--Logo, Title, and Subtitle-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">symphoni</a>
+                        <small class="navbar-text">free your music</small>
+                    </div>
+
+                    <!--Tabs-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#/about">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </body>
+</html>
